@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static "style.css"%}">
+    <title></title>
+  </head>
+  <body>
+    <div class="content">
+      <h1 id="title">My Post Details</h1>
+      {% for i in post_list %}
+
+        <h1><a href="{{i.get_absolute_url}}">{{i.title}}</a></h1>
+        <h3 id="detail">was created on {{i.created_at}} by {{i.user}}</h3>
+        <p>{{i.description|truncatewords:20}}</p>
+
+      {% endfor %}
+
+    </div>
+
+    <div class="sidebar">
+      <h1>Python Interview Questions</h1>
+    </div>
+  </body>
+</html>

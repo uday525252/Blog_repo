@@ -1,0 +1,28 @@
+.content{
+  background-color: red;
+  width: 60%;
+  float: left;
+
+}
+
+
+.sidebar{
+  background-color: yellow;
+  width: 40%;
+  float: right;
+
+}
+
+body{
+  background-color: gray;
+  color: white;
+}
+
+
+#title{
+  border-bottom: 3px solid black;
+}
+
+#detail{
+  color: yellow;
+}
